@@ -104,6 +104,9 @@ quantity.addEventListener("input", () =>
 
 // Validation du formulaire
 function validate(event) {
+  // Empêcher la fermeture automatique du formulaire
+  event.preventDefault();
+
   // Appeler les fonctions de validation individuelles
   validateInput(firstName, "Veuillez entrer 2 caractères ou plus.");
   validateInput(lastName, "Veuillez entrer 2 caractères ou plus.");
@@ -117,10 +120,6 @@ function validate(event) {
   var errorElements = document.querySelectorAll(
     '.formData[data-error-visible="true"]'
   );
-
-  // Empêcher la fermeture automatique du formulaire
-  event.preventDefault();
-
   // S'il existe au moins une erreur
   if (errorElements.length > 0) {
     // Définir le focus sur le premier champ en erreur
