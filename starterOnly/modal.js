@@ -9,11 +9,10 @@ function editNav() {
 }
 
 // Elements du DOM
+const modalBtn = document.querySelectorAll(".modal-btn");
 const modalbg = document.querySelector(".bground");
 const modalcontent = document.querySelector(".content");
-const modalBtn = document.querySelectorAll(".modal-btn");
 const modalCloseBtn = document.querySelector(".close");
-const formData = document.querySelectorAll(".formData");
 const modalForm = document.querySelector("form");
 const modalThanks = document.querySelector(".thanks");
 const signUpButtons = document.querySelectorAll(".btn-signup");
@@ -54,7 +53,6 @@ const email = document.getElementById("email");
 const birthdate = document.getElementById("birthdate");
 const quantity = document.getElementById("quantity");
 const tournamentLocation = document.getElementById("location1");
-const locationInputs = document.querySelectorAll('input[name="location"]');
 const checkbox1 = document.getElementById("checkbox1");
 
 // Date de naissance maximale assignée à la date d'aujourd'hui
